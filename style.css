@@ -519,3 +519,512 @@ font-size:18px;
 color:#d3dce7;
 
 }
+
+
+/* ==========================================================
+   ABOUT SECTION
+========================================================== */
+
+.about{
+    position:relative;
+    background:#091726;
+}
+
+.about .container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:70px;
+}
+
+.about-image{
+    position:relative;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:24px;
+    box-shadow:0 30px 60px rgba(0,0,0,.35);
+    transition:.4s;
+}
+
+.about-image img:hover{
+    transform:scale(1.03);
+}
+
+.about-content h5{
+    color:#00bfff;
+    letter-spacing:4px;
+    margin-bottom:15px;
+    font-size:15px;
+}
+
+.about-content h2{
+    font-size:44px;
+    line-height:1.25;
+    margin-bottom:25px;
+}
+
+.about-content p{
+    color:#c3d0df;
+    margin-bottom:25px;
+    font-size:17px;
+}
+
+.about-content ul{
+    margin-bottom:35px;
+}
+
+.about-content ul li{
+    margin-bottom:18px;
+    display:flex;
+    align-items:center;
+    font-size:17px;
+}
+
+.about-content ul li i{
+    color:#00bfff;
+    margin-right:15px;
+    font-size:18px;
+}
+
+/* ==========================================================
+   SERVICES
+========================================================== */
+
+.services{
+    background:#08121f;
+}
+
+.service-grid{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+    gap:30px;
+}
+
+.service-card{
+
+    background:#0f1d31;
+
+    border-radius:20px;
+
+    padding:45px 35px;
+
+    transition:.4s;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.service-card::before{
+
+content:"";
+
+position:absolute;
+
+left:-120%;
+
+top:0;
+
+width:100%;
+
+height:100%;
+
+background:linear-gradient(
+
+90deg,
+
+transparent,
+
+rgba(255,255,255,.08),
+
+transparent
+
+);
+
+transition:.8s;
+
+}
+
+.service-card:hover::before{
+
+left:120%;
+
+}
+
+.service-card:hover{
+
+transform:translateY(-15px);
+
+box-shadow:0 20px 50px rgba(0,191,255,.18);
+
+border-color:#00bfff;
+
+}
+
+.service-card i{
+
+font-size:58px;
+
+margin-bottom:25px;
+
+color:#00bfff;
+
+}
+
+.service-card h3{
+
+font-size:25px;
+
+margin-bottom:18px;
+
+}
+
+.service-card p{
+
+color:#c6d3df;
+
+font-size:16px;
+
+}
+
+/* ==========================================================
+PORTFOLIO
+========================================================== */
+
+.portfolio{
+
+background:#091726;
+
+}
+
+.portfolio-grid{
+
+width:90%;
+
+max-width:1300px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+.project{
+
+position:relative;
+
+overflow:hidden;
+
+border-radius:22px;
+
+cursor:pointer;
+
+}
+
+.project img{
+
+width:100%;
+
+height:420px;
+
+object-fit:cover;
+
+transition:.55s;
+
+}
+
+.project:hover img{
+
+transform:scale(1.12);
+
+}
+
+.overlay{
+
+position:absolute;
+
+inset:0;
+
+background:linear-gradient(
+
+transparent,
+
+rgba(0,0,0,.9)
+
+);
+
+display:flex;
+
+align-items:flex-end;
+
+padding:35px;
+
+opacity:0;
+
+transition:.4s;
+
+}
+
+.project:hover .overlay{
+
+opacity:1;
+
+}
+
+.overlay h3{
+
+font-size:28px;
+
+transform:translateY(25px);
+
+transition:.35s;
+
+}
+
+.project:hover h3{
+
+transform:translateY(0);
+
+}
+
+/* ==========================================================
+CTA
+========================================================== */
+
+.cta{
+
+background:linear-gradient(
+
+135deg,
+
+#007bff,
+
+#00bfff
+
+);
+
+text-align:center;
+
+padding:120px 30px;
+
+}
+
+.cta h2{
+
+font-size:52px;
+
+margin-bottom:20px;
+
+}
+
+.cta p{
+
+font-size:20px;
+
+margin-bottom:40px;
+
+opacity:.92;
+
+}
+
+.cta .primary-btn{
+
+background:white;
+
+color:#007bff;
+
+box-shadow:none;
+
+}
+
+.cta .primary-btn:hover{
+
+transform:translateY(-5px);
+
+}
+
+/* ==========================================================
+FOOTER
+========================================================== */
+
+footer{
+
+background:#050b16;
+
+padding:90px 8% 40px;
+
+}
+
+.footer-content{
+
+display:grid;
+
+grid-template-columns:2fr 1fr 1fr;
+
+gap:60px;
+
+margin-bottom:60px;
+
+}
+
+.footer-content h3{
+
+font-size:34px;
+
+margin-bottom:20px;
+
+}
+
+.footer-content h4{
+
+margin-bottom:20px;
+
+font-size:22px;
+
+}
+
+.footer-content p{
+
+color:#aebdce;
+
+line-height:1.8;
+
+}
+
+.footer-content a{
+
+display:block;
+
+margin-bottom:12px;
+
+color:#c5d1de;
+
+transition:.3s;
+
+}
+
+.footer-content a:hover{
+
+color:#00bfff;
+
+padding-left:8px;
+
+}
+
+.footer-content i{
+
+font-size:24px;
+
+margin-right:18px;
+
+}
+
+.copyright{
+
+border-top:1px solid rgba(255,255,255,.08);
+
+padding-top:30px;
+
+text-align:center;
+
+color:#91a4b8;
+
+font-size:15px;
+
+}
+
+/* ==========================================================
+GLASS EFFECT
+========================================================== */
+
+.glass{
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:20px;
+
+}
+
+/* ==========================================================
+UTILITY CLASSES
+========================================================== */
+
+.text-center{
+    text-align:center;
+}
+
+.mt-50{
+    margin-top:50px;
+}
+
+.mb-50{
+    margin-bottom:50px;
+}
+
+.shadow{
+    box-shadow:0 20px 45px rgba(0,0,0,.25);
+}
+
+/* ==========================================================
+HOVER ANIMATIONS
+========================================================== */
+
+.fade-up{
+    opacity:0;
+    transform:translateY(60px);
+    transition:.7s;
+}
+
+.fade-up.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.zoom{
+    overflow:hidden;
+}
+
+.zoom img{
+    transition:.5s;
+}
+
+.zoom:hover img{
+    transform:scale(1.1);
+}
+
+.rotate:hover{
+    transform:rotate(3deg);
+}
+
+/* ==========================================================
+PARTICLE BACKGROUND
+========================================================== */
+
+#particles-js{
+    position:absolute;
+    inset:0;
+    z-index:1;
+}
+
+.hero-content,
+.hero-image{
+    position:relative;
+    z-index:5;
+}
