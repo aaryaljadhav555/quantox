@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantox Technologies | Next-Gen Multi-Domain Enterprise</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #030712;
+            overflow-x: hidden;
+        }
+        /* Premium Glow Effects */
+        .neon-glow-blue {
+            box-shadow: 0 0 50px -10px rgba(59, 130, 246, 0.2);
+        }
+        .neon-glow-purple {
+            box-shadow: 0 0 50px -10px rgba(147, 51, 234, 0.2);
+        }
+        /* Smooth Animation Keyframes */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #030712;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1f2937;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3b82f6;
+        }
+    </style>
+</head>
+<body class="text-gray-100 antialiased">
+
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute top-[800px] right-1/4 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-[150px] pointer-events-none"></div>
+
+    <header class="fixed top-0 left-0 w-full z-50 bg-gray-950/70 backdrop-blur-md border-b border-gray-800/60 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-purple-600 flex items-center justify-center font-extrabold text-white text-xl shadow-lg shadow-blue-500/20 transform group-hover:rotate-12 transition-transform duration-300">
+                    Q
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-lg font-extrabold tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-gray-400">QUANTOX</span>
+                    <span class="text-[10px] text-blue-400 font-semibold tracking-[0.2em] -mt-1">TECHNOLOGIES</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
+                <a href="#home" class="hover:text-white transition-colors duration-200 text-gray-200">Home</a>
+                <a href="#services" class="hover:text-white transition-colors duration-200">Services</a>
+                <a href="#stats" class="hover:text-white transition-colors duration-200">Impact</a>
+                <a href="#products" class="hover:text-white transition-colors duration-200">Ecosystem</a>
+                <a href="#contact" class="hover:text-white transition-colors duration-200">Get In Touch</a>
+            </nav>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#contact" class="px-5 h-11 inline-flex items-center text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl hover:opacity-95 transition-all duration-300 shadow-md shadow-blue-600/20 active:scale-95">
+                    Launch a Project
+                </a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-gray-400 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-950 border-b border-gray-800 px-6 py-6 transition-all duration-300">
+            <div class="flex flex-col gap-4 text-base font-medium">
+                <a href="#home" class="text-white">Home</a>
+                <a href="#services" class="text-gray-400">Services</a>
+                <a href="#stats" class="text-gray-400">Impact</a>
+                <a href="#products" class="text-gray-400">Ecosystem</a>
+                <a href="#contact" class="text-gray-400">Get In Touch</a>
+                <a href="#contact" class="mt-2 w-full text-center py-3 text-sm font-semibold text-white bg-blue-600 rounded-xl">Launch a Project</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="relative pt-32 pb-24 md:pt-48 md:pb-36 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-900/80 border border-gray-800 backdrop-blur-sm mb-6 animate-pulse">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span class="text-xs font-semibold text-gray-300 tracking-wide uppercase">Multi-Domain Digital Transformation Ecosystem</span>
+            </div>
+
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white mb-8 max-w-5xl mx-auto leading-[1.15]">
+                We Turn Bold Visions Into <br class="hidden sm:inline">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-500">
+                    Real-World Digital Impact
+                </span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-gray-400 font-normal max-w-3xl mx-auto mb-10 leading-relaxed">
+                Crafting elite enterprise software, AI-powered geospatial GIS systems, intelligent apps, and scalable web frameworks for forward-thinking governments and global businesses.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+                <a href="#services" class="w-full sm:w-auto px-8 h-14 inline-flex items-center justify-center text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl hover:shadow-lg hover:shadow-blue-500/20 transform hover:-translate-y-0.5 transition-all duration-200">
+                    Explore Enterprise Capabilities
+                    <i class="fa-solid fa-arrow-right ml-3 text-sm"></i>
+                </a>
+                <a href="#products" class="w-full sm:w-auto px-8 h-14 inline-flex items-center justify-center text-base font-semibold text-gray-300 bg-gray-900/60 hover:bg-gray-900 border border-gray-800 rounded-xl hover:text-white transition-all duration-200">
+                    View Live Products
+                </a>
+            </div>
+
+            <div class="relative max-w-5xl mx-auto rounded-2xl border border-gray-800/80 bg-gray-950/40 p-4 shadow-2xl neon-glow-blue animate-float">
+                <div class="flex items-center gap-2 pb-3 border-b border-gray-900 mb-4">
+                    <span class="w-3 w-3 h-3 rounded-full bg-red-500/70"></span>
+                    <span class="w-3 w-3 h-3 rounded-full bg-yellow-500/70"></span>
+                    <span class="w-3 w-3 h-3 rounded-full bg-green-500/70"></span>
+                    <div class="h-5 bg-gray-900/80 rounded-md text-[10px] text-gray-500 flex items-center px-4 ml-4 font-mono tracking-wider">https://core.qmipl.tech/analytics_dashboard</div>
+                </div>
+                <div class="bg-gray-900/30 rounded-xl border border-gray-800/50 aspect-[16/9] flex items-center justify-center relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="Advanced Tech Infrastructure Dashboard" class="w-full h-full object-cover mix-blend-luminosity opacity-40 absolute inset-0">
+                    <div class="relative z-10 text-center px-4">
+                        <i class="fa-solid fa-circle-nodes text-5xl text-blue-500 mb-4 animate-pulse"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Simulating Neural Network Pipelines</h3>
+                        <p class="text-sm text-gray-400 font-mono">Status: Operational // Data Streams Synced Successfully</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-gray-950/40 border-y border-gray-900 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-xs font-bold text-blue-500 tracking-[0.25em] uppercase mb-3">Enterprise Matrices</h2>
+                <p class="text-3xl md:text-5xl font-extrabold text-white tracking-tight">Architecting Multi-Domain Solutions</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group p-8 rounded-2xl bg-gray-900/40 border border-gray-800/80 hover:border-blue-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/5 hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-earth-asia"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">GIS & Remote Sensing</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">High-fidelity geospatial frameworks leveraging localized satellite imagery data pipelines, tailored precisely for agriculture infrastructure and smart governance matrices.</p>
+                </div>
+
+                <div class="group p-8 rounded-2xl bg-gray-900/40 border border-gray-800/80 hover:border-purple-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/5 hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-6 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-code-branch"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Enterprise Architecture</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">Developing ultra-scalable native desktop setups, cloud-agnostic application instances, and secure databases engineered to solve intensive industrial challenges.</p>
+                </div>
+
+                <div class="group p-8 rounded-2xl bg-gray-900/40 border border-gray-800/80 hover:border-indigo-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-indigo-500/5 hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Next-Gen Web Platforms</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">Designing custom interfaces matching consumer grade fluidity with robust backends, optimizing conversion architectures, and guaranteeing zero latency drop-offs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats" class="py-20 bg-gradient-to-b from-transparent to-gray-950/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 bg-gray-900/30 border border-gray-800/60 rounded-3xl p-8 md:p-12 backdrop-blur-sm text-center">
+                <div>
+                    <div class="text-3xl md:text-5xl font-extrabold text-white mb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-400">250K+</div>
+                    <div class="text-xs md:text-sm font-semibold tracking-wider text-gray-500 uppercase">Trusted Active Users</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-5xl font-extrabold text-white mb-2 bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">300+</div>
+                    <div class="text-xs md:text-sm font-semibold tracking-wider text-gray-500 uppercase">Enterprise Deployments</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-5xl font-extrabold text-white mb-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">80%</div>
+                    <div class="text-xs md:text-sm font-semibold tracking-wider text-gray-500 uppercase">Efficiency Escalation</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-5xl font-extrabold text-white mb-2 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-400">24/7</div>
+                    <div class="text-xs md:text-sm font-semibold tracking-wider text-gray-500 uppercase">Systems Infrastructure Uptime</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-start md:items-end justify-between mb-16 gap-4">
+                <div>
+                    <h2 class="text-xs font-bold text-purple-500 tracking-[0.25em] uppercase mb-3">Proprietary Software Suite</h2>
+                    <p class="text-3xl md:text-5xl font-extrabold text-white tracking-tight">Powering Critical Operations</p>
+                </div>
+                <p class="text-gray-400 max-w-md text-sm md:text-base leading-relaxed">
+                    Explore real-world software products built by Quantox Technologies currently accelerating governance portal management and regional agricultural commercial operations.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="group overflow-hidden rounded-2xl bg-gray-900/30 border border-gray-800 hover:border-gray-700 transition-all duration-300">
+                    <div class="aspect-[16/9] overflow-hidden relative bg-gray-950">
+                        <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&w=800&q=80" alt="Governance Data Dashboard View" class="w-full h-full object-cover opacity-60 transform group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/20 to-transparent"></div>
+                        <span class="absolute top-4 right-4 text-[10px] font-bold tracking-widest text-emerald-400 bg-emerald-950/80 border border-emerald-800/60 px-3 py-1 rounded-full uppercase">Live Deployment</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-white mb-2 flex items-center justify-between">
+                            Online Seva Portal Architecture
+                            <i class="fa-solid fa-arrow-up-right-from-square text-sm text-gray-500 group-hover:text-blue-400 transition-colors"></i>
+                        </h3>
+                        <p class="text-sm text-gray-400 leading-relaxed mb-6">
+                            A highly transactional framework handling micro-certifications, instant applications processing tracking arrays, and integrated spatial GIS localized mappings designed for flawless citizen portal administration.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-400">
+                            <span class="px-3 py-1 bg-gray-900 rounded-md border border-gray-800">High Availability Architecture</span>
+                            <span class="px-3 py-1 bg-gray-900 rounded-md border border-gray-800">GIS Core Map Engine</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group overflow-hidden rounded-2xl bg-gray-900/30 border border-gray-800 hover:border-gray-700 transition-all duration-300">
+                    <div class="aspect-[16/9] overflow-hidden relative bg-gray-950">
+                        <img src="https://images.unsplash.com/photo-1592417817098-8f3d6eb18865?auto=format&fit=crop&w=800&q=80" alt="Agriculture Logistics Ledger System" class="w-full h-full object-cover opacity-60 transform group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/20 to-transparent"></div>
+                        <span class="absolute top-4 right-4 text-[10px] font-bold tracking-widest text-purple-400 bg-purple-950/80 border border-purple-800/60 px-3 py-1 rounded-full uppercase">Enterprise Software</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-white mb-2 flex items-center justify-between">
+                            KRUSHIGATHA Ecosystem
+                            <i class="fa-solid fa-arrow-up-right-from-square text-sm text-gray-500 group-hover:text-purple-400 transition-colors"></i>
+                        </h3>
+                        <p class="text-sm text-gray-400 leading-relaxed mb-6">
+                            A masterfully optimized, robust business intelligence platform covering complex GST real-time calculations, automated stock monitoring notifications, offline-capable progressive app states, and multi-user accounts configurations.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-400">
+                            <span class="px-3 py-1 bg-gray-900 rounded-md border border-gray-800">Offline PWA States</span>
+                            <span class="px-3 py-1 bg-gray-900 rounded-md border border-gray-800">Real-time GST Invoicing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 relative bg-gradient-to-b from-transparent to-gray-950">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-xs font-bold text-blue-500 tracking-[0.25em] uppercase mb-3">Initiate Synergy</h2>
+                <p class="text-3xl md:text-5xl font-extrabold text-white mb-4">Let's Build Big Things Together</p>
+                <p class="text-gray-400 text-sm md:text-base">Connect directly with our engineering advisory panel to scale your operation.</p>
+            </div>
+
+            <div class="bg-gray-900/40 border border-gray-800 p-8 md:p-10 rounded-3xl backdrop-blur-md neon-glow-purple">
+                <form action="#" method="POST" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-400 tracking-wider uppercase mb-2">First Name</label>
+                            <input type="text" required class="w-full h-12 bg-gray-950 border border-gray-800 focus:border-purple-500 rounded-xl px-4 text-sm text-white focus:outline-none transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-400 tracking-wider uppercase mb-2">Last Name</label>
+                            <input type="text" required class="w-full h-12 bg-gray-950 border border-gray-800 focus:border-purple-500 rounded-xl px-4 text-sm text-white focus:outline-none transition-colors">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-400 tracking-wider uppercase mb-2">Corporate Email Address</label>
+                        <input type="email" required class="w-full h-12 bg-gray-950 border border-gray-800 focus:border-purple-500 rounded-xl px-4 text-sm text-white focus:outline-none transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-400 tracking-wider uppercase mb-2">Project Brief / Core Problem Statement</label>
+                        <textarea rows="4" required class="w-full bg-gray-950 border border-gray-800 focus:border-purple-500 rounded-xl p-4 text-sm text-white focus:outline-none transition-colors resize-none" placeholder="Outline the parameters of your desired digital outcome..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full h-14 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 hover:opacity-95 text-white font-bold text-sm tracking-wider uppercase rounded-xl shadow-lg shadow-purple-600/10 active:scale-[0.99] transition-all">
+                        Transmit Data Payload
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-gray-900 bg-gray-950 py-12 text-sm text-gray-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-7 h-7 rounded-lg bg-gray-900 border border-gray-800 flex items-center justify-center font-bold text-white text-xs">Q</div>
+                <span>&copy; 2026 Quantox Technologies Pvt. Ltd. All rights reserved.</span>
+            </div>
+            <div class="flex flex-wrap justify-center gap-6 font-mono text-xs">
+                <a href="mailto:contact@qmipl.com" class="hover:text-blue-400 transition-colors"><i class="fa-solid fa-envelope mr-1"></i> contact@qmipl.com</a>
+                <span class="text-gray-800">|</span>
+                <a href="tel:+919890250074" class="hover:text-purple-400 transition-colors"><i class="fa-solid fa-phone mr-1"></i> +91 9890250074</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Logic for Mobile Nav Drawer
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Hide Mobile Menu On Clicking Anchors
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
