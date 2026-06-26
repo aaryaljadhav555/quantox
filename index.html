@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quantox Technologies Pvt. Ltd. | Multi-Domain IT Solutions</title>
-    <!-- Tailwind CSS Engine -->
+    <title>Quantox Technologies Pvt. Ltd. | Multi-Domain Software & GIS Solutions</title>
+    <!-- Modern Tailwind CSS v4 CDN Engine -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Premium FontAwesome Vectors -->
+    <!-- FontAwesome Pro Iconography Arrays -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Typography Matrix -->
+    <!-- Premium Google Font Matrices -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     
     <style>
         body {
@@ -19,456 +19,548 @@
             background-color: #030712;
             overflow-x: hidden;
         }
-        .neon-glow-blue { box-shadow: 0 0 50px -10px rgba(59, 130, 246, 0.25); }
-        .neon-glow-purple { box-shadow: 0 0 50px -10px rgba(147, 51, 234, 0.25); }
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-8px); }
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
         }
-        .animate-float { animation: float 5s ease-in-out infinite; }
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #030712; }
-        ::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #3b82f6; }
+        /* Custom Neon Glow Masks */
+        .neon-glow-primary {
+            box-shadow: 0 0 50px -12px rgba(59, 130, 246, 0.3);
+        }
+        .neon-glow-secondary {
+            box-shadow: 0 0 50px -12px rgba(168, 85, 247, 0.3);
+        }
+        /* Ultra-Smooth Micro-Animations */
+        @keyframes floatY {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-subtle-float {
+            animation: floatY 6s ease-in-out infinite;
+        }
+        /* Glassmorphism Classes */
+        .glass-panel {
+            background: rgba(17, 24, 39, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        /* Custom High-Performance Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #030712;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1f2937;
+            border-radius: 99px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3b82f6;
+        }
     </style>
 </head>
-<body class="text-gray-200 antialiased">
+<body class="text-gray-200 antialiased selection:bg-blue-500/30 selection:text-blue-200">
 
-    <!-- GLOBAL BACKGROUND BLUR GRADIENTS -->
-    <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[130px] pointer-events-none"></div>
-    <div class="absolute top-[900px] right-1/4 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-[160px] pointer-events-none"></div>
+    <!-- GLOBAL AMBIENT LAYER MATRICES -->
+    <div class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute top-[1200px] right-1/4 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[160px] pointer-events-none"></div>
+    <div class="absolute bottom-[800px] left-1/3 w-[500px] h-[500px] bg-emerald-600/5 rounded-full blur-[130px] pointer-events-none"></div>
 
-    <!-- MAIN ENTERPRISE HEADER NAVBAR -->
-    <header class="fixed top-0 left-0 w-full z-50 bg-gray-950/80 backdrop-blur-md border-b border-gray-900 transition-all duration-300">
+    <!-- ENTERPRISE FIXED HEADER NAVIGATION -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-gray-950/75 backdrop-blur-md border-b border-gray-900/80 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <!-- Quantum Brand Logo -->
+            <!-- Corporate Brand Identity Core Logo -->
             <a href="#" class="flex items-center gap-3 group">
-                <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center font-extrabold text-white text-2xl shadow-lg shadow-blue-500/20 transform group-hover:rotate-6 transition-all duration-300">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-purple-600 flex items-center justify-center font-extrabold text-white text-2xl shadow-lg shadow-blue-500/20 transform group-hover:rotate-6 transition-all duration-300">
                     Q
                 </div>
                 <div class="flex flex-col">
-                    <span class="text-xl font-black tracking-wider text-white">QUANTOX</span>
-                    <span class="text-[10px] text-blue-400 font-bold tracking-[0.25em] -mt-1">TECHNOLOGIES</span>
+                    <span class="text-2xl font-black tracking-tight text-white heading-font">QUANTOX</span>
+                    <span class="text-[10px] text-blue-400 font-bold tracking-[0.25em] -mt-1 font-mono">TECHNOLOGIES</span>
                 </div>
             </a>
 
-            <!-- Navigation Links Matrix -->
-            <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-gray-400">
-                <a href="#home" class="hover:text-blue-400 transition-colors">Home</a>
-                <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
-                <a href="#services" class="hover:text-blue-400 transition-colors">Services</a>
-                <a href="#products" class="hover:text-blue-400 transition-colors">SaaS Products</a>
-                <a href="#value" class="hover:text-blue-400 transition-colors">Values</a>
-                <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
+            <!-- Desktop Active Link Matrix -->
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold tracking-wide text-gray-400">
+                <a href="#home" class="hover:text-blue-400 transition-colors duration-200">Home</a>
+                <a href="#about" class="hover:text-blue-400 transition-colors duration-200">About Us</a>
+                <a href="#services" class="hover:text-blue-400 transition-colors duration-200">Our Services</a>
+                <a href="#products" class="hover:text-blue-400 transition-colors duration-200">Products</a>
+                <a href="#values" class="hover:text-blue-400 transition-colors duration-200">Core Values</a>
+                <a href="#contact" class="hover:text-blue-400 transition-colors duration-200">Contact</a>
             </nav>
 
-            <!-- CTA Interface Gateways -->
+            <!-- Navigation Strategic CTA Action Trigger -->
             <div class="hidden lg:flex items-center gap-4">
-                <a href="#contact" class="px-5 py-2.5 text-sm font-bold text-white bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl hover:opacity-90 shadow-md shadow-blue-600/10 transition-all active:scale-95">
-                    Launch Project Matrix
+                <a href="#contact" class="px-6 py-2.5 text-sm font-bold text-white bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 rounded-xl hover:opacity-95 shadow-lg shadow-blue-500/10 hover:shadow-blue-500/20 transition-all duration-300 active:scale-95">
+                    Connect Now
                 </a>
             </div>
 
-            <!-- Mobile Drawer Activation Trigger -->
-            <button id="menu-btn" class="lg:hidden text-gray-400 hover:text-white focus:outline-none">
+            <!-- Mobile Drawer Activation Trigger Button -->
+            <button id="menu-btn" class="lg:hidden p-2 text-gray-400 hover:text-white focus:outline-none transition-colors">
                 <i class="fa-solid fa-bars-staggered text-2xl"></i>
             </button>
         </div>
 
-        <!-- Mobile Nav Matrix Link Drawer Layout -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-gray-950 border-b border-gray-900 px-6 py-6 transition-all duration-300">
+        <!-- Mobile Dynamic Drawer Dropdown Matrix Layout -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-gray-950 border-b border-gray-900 px-6 py-6 space-y-4">
             <div class="flex flex-col gap-4 text-base font-semibold">
-                <a href="#home" class="text-white">Home</a>
-                <a href="#about" class="text-gray-400">About</a>
-                <a href="#services" class="text-gray-400">Services</a>
-                <a href="#products" class="text-gray-400">SaaS Products</a>
-                <a href="#value" class="text-gray-400">Values</a>
-                <a href="#contact" class="text-gray-400">Contact Us</a>
-                <a href="#contact" class="mt-2 w-full text-center py-3 text-sm font-bold text-white bg-blue-600 rounded-xl">Get Started</a>
+                <a href="#home" class="text-white hover:text-blue-400 transition-colors">Home</a>
+                <a href="#about" class="text-gray-400 hover:text-blue-400 transition-colors">About Us</a>
+                <a href="#services" class="text-gray-400 hover:text-blue-400 transition-colors">Our Services</a>
+                <a href="#products" class="text-gray-400 hover:text-blue-400 transition-colors">Products</a>
+                <a href="#values" class="text-gray-400 hover:text-blue-400 transition-colors">Core Values</a>
+                <a href="#contact" class="text-gray-400 hover:text-blue-400 transition-colors">Contact</a>
+                <a href="#contact" class="mt-2 w-full text-center py-3 text-sm font-bold text-white bg-blue-600 rounded-xl shadow-md">Connect Now</a>
             </div>
         </div>
     </header>
 
-    <!-- CORE HERO GRAPHIC ARRAYS SECTION -->
-    <section id="home" class="relative pt-36 pb-24 lg:pt-48 lg:pb-36 overflow-hidden">
+    <!-- HERO SEGMENT HEROIC ARRAYS SECTION -->
+    <section id="home" class="relative pt-36 pb-24 lg:pt-52 lg:pb-36 overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <!-- Pulsing State Badge -->
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gray-900 border border-gray-800 backdrop-blur-sm mb-6">
-                <span class="w-2 h-2 rounded-full bg-blue-500 animate-ping"></span>
-                <span class="text-xs font-bold text-gray-300 tracking-wider uppercase">We Create Your Dreams</span>
+            <!-- Micro-Interaction State Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gray-900/90 border border-gray-800/80 backdrop-blur-sm mb-6 shadow-sm">
+                <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+                <span class="text-xs font-bold text-gray-300 tracking-wider uppercase font-mono">We Create Your Dreams</span>
             </div>
 
-            <!-- Master Strategic Heading Line -->
-            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-white mb-8 max-w-5xl mx-auto leading-[1.1]">
-                Crafting Intelligent Applications & Real-World <br>
+            <!-- Main Enterprise Core Value Catchphrase -->
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-white mb-8 max-w-5xl mx-auto leading-[1.1] heading-font">
+                Crafting High-Performance Software & <br class="hidden lg:inline">
                 <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-500">
-                    Digital Transformations
+                    Innovative Digital Transformations
                 </span>
             </h1>
 
-            <p class="text-lg lg:text-xl text-gray-400 font-normal max-w-3xl mx-auto mb-10 leading-relaxed">
-                Quantox Technologies Pvt. Ltd. is a multi-domain IT powerhouse turning bold ideas into seamless infrastructure. From satellite GIS tracking to scalable enterprise apps, we build the future.
+            <!-- Business Sub-Context Parameter Statement -->
+            <p class="text-lg lg:text-xl text-gray-400 font-normal max-w-3xl mx-auto mb-12 leading-relaxed">
+                Quantox Technologies Pvt. Ltd. delivers cutting-edge software solutions across multiple tech verticals—combining spatial GIS remote sensing, optimized mobile apps, and robust desktop development engines.
             </p>
 
-            <!-- Strategic Action Triggers -->
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
-                <a href="#services" class="w-full sm:w-auto px-8 py-4 text-base font-bold text-white bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl hover:shadow-lg hover:shadow-blue-500/10 transform hover:-translate-y-0.5 transition-all">
-                    Explore Multi-Domain Services
-                    <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+            <!-- Strategic Interfacing Target Nodes -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-24">
+                <a href="#services" class="w-full sm:w-auto px-8 py-4 text-base font-bold text-white bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-0.5 transition-all duration-200 group">
+                    Explore Our Services
+                    <i class="fa-solid fa-arrow-right ml-2 text-sm group-hover:translate-x-1 transition-transform"></i>
                 </a>
-                <a href="#products" class="w-full sm:w-auto px-8 py-4 text-base font-bold text-gray-300 bg-gray-900 hover:bg-gray-800 border border-gray-800 rounded-xl transition-all">
-                    View Live Proprietary Products
+                <a href="#products" class="w-full sm:w-auto px-8 py-4 text-base font-bold text-gray-300 bg-gray-900/60 hover:bg-gray-900 border border-gray-800 rounded-xl transition-all duration-200 hover:text-white">
+                    View Enterprise Products
                 </a>
             </div>
 
-            <!-- Dashboard Dynamic Preview Component -->
-            <div class="relative max-w-5xl mx-auto rounded-2xl border border-gray-800 bg-gray-950/50 p-4 shadow-2xl neon-glow-blue animate-float">
-                <div class="flex items-center gap-2 pb-3 border-b border-gray-900 mb-4">
-                    <span class="w-3 h-3 rounded-full bg-red-500/60"></span>
-                    <span class="w-3 h-3 rounded-full bg-yellow-500/60"></span>
-                    <span class="w-3 h-3 rounded-full bg-green-500/60"></span>
-                    <div class="h-5 bg-gray-900 rounded px-4 ml-3 text-[10px] text-gray-500 font-mono flex items-center">https://core.qmipl.com/analytics_node</div>
+            <!-- Advanced Cyber Mockup Analytics Portal Window Representation -->
+            <div class="relative max-w-5xl mx-auto rounded-2xl border border-gray-800/90 bg-gray-950/40 p-4 shadow-2xl neon-glow-primary animate-subtle-float">
+                <div class="flex items-center justify-between pb-3 border-b border-gray-900 mb-4 px-2">
+                    <div class="flex items-center gap-2">
+                        <span class="w-3 h-3 rounded-full bg-red-500/60"></span>
+                        <span class="w-3 h-3 rounded-full bg-yellow-500/60"></span>
+                        <span class="w-3 h-3 rounded-full bg-green-500/60"></span>
+                    </div>
+                    <div class="h-6 bg-gray-900 px-6 text-[11px] text-gray-500 font-mono rounded-md flex items-center border border-gray-800/40">https://core.qmipl.com/gis_telemetry_node</div>
+                    <div class="w-4"></div>
                 </div>
-                <div class="bg-gray-950 rounded-xl border border-gray-900 aspect-[16/9] flex items-center justify-center relative overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="Tech Infrastructure Dashboard" class="w-full h-full object-cover opacity-25 absolute inset-0">
-                    <div class="relative z-10 text-center px-4">
-                        <i class="fa-solid fa-square-poll-vertical text-5xl text-blue-500 mb-4 animate-pulse"></i>
-                        <h3 class="text-xl font-bold text-white mb-1">GIS Data Stream Consolidation</h3>
-                        <p class="text-xs text-gray-500 font-mono tracking-wide">SYSTEM MATRIX STATUS: FULL OPERATIONAL UPTIME // 2026 ACTIVE PATHWAYS</p>
+                <div class="bg-gray-950 rounded-xl border border-gray-900/80 aspect-[16/9] flex items-center justify-center relative overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="Advanced Multi-Domain Analytics Display Layout" class="w-full h-full object-cover opacity-20 mix-blend-luminosity absolute inset-0 transform scale-102 group-hover:scale-105 transition-transform duration-700">
+                    <div class="relative z-10 text-center px-6">
+                        <div class="w-16 h-16 rounded-2xl bg-blue-500/10 text-blue-400 border border-blue-500/20 flex items-center justify-center text-2xl mx-auto mb-4 animate-pulse">
+                            <i class="fa-solid fa-satellite-dish"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 heading-font tracking-wide">Spatial Remote Sensing Stream Core Active</h3>
+                        <p class="text-xs text-gray-500 font-mono uppercase tracking-widest">System Status: 100% Operational // Compute Nodes Synced Successfully</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- LIVE HIGH-PERFORMANCE GLOBAL DATA METRICS -->
-    <section class="py-12 bg-gray-950 border-y border-gray-900">
+    <!-- REAL-WORLD METRICS STATISTICAL DISPLAYS -->
+    <section class="py-16 bg-gray-950/70 border-y border-gray-900/60 backdrop-blur-sm">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-                <div>
-                    <div class="text-3xl lg:text-5xl font-black text-white mb-1 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-400">250K+</div>
-                    <div class="text-xs font-bold tracking-wider text-gray-500 uppercase">Trusted Active Users</div>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 text-center">
+                <div class="space-y-1">
+                    <div class="text-4xl lg:text-5xl font-black text-white heading-font bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-400">250K+</div>
+                    <div class="text-xs font-bold tracking-widest text-gray-500 uppercase font-mono">Trusted Active Users</div>
                 </div>
-                <div>
-                    <div class="text-3xl lg:text-5xl font-black text-white mb-1 bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">300+</div>
-                    <div class="text-xs font-bold tracking-wider text-gray-500 uppercase">Happy Corporate Clients</div>
+                <div class="space-y-1">
+                    <div class="text-4xl lg:text-5xl font-black text-white heading-font bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">300+</div>
+                    <div class="text-xs font-bold tracking-widest text-gray-500 uppercase font-mono">Happy Corporate Clients</div>
                 </div>
-                <div>
-                    <div class="text-3xl lg:text-5xl font-black text-white mb-1 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">42K+</div>
-                    <div class="text-xs font-bold tracking-wider text-gray-500 uppercase">Active Application Nodes</div>
+                <div class="space-y-1">
+                    <div class="text-4xl lg:text-5xl font-black text-white heading-font bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">42K+</div>
+                    <div class="text-xs font-bold tracking-widest text-gray-500 uppercase font-mono">Active Code Deployments</div>
                 </div>
-                <div>
-                    <div class="text-3xl lg:text-5xl font-black text-white mb-1 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-400">80%</div>
-                    <div class="text-xs font-bold tracking-wider text-gray-500 uppercase">Operational Success Rate</div>
+                <div class="space-y-1">
+                    <div class="text-4xl lg:text-5xl font-black text-white heading-font bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-400">80%</div>
+                    <div class="text-xs font-bold tracking-widest text-gray-500 uppercase font-mono">Operational Success Ratio</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CORPORATE STRUCTURAL OVERVIEW (ABOUT US) -->
-    <section id="about" class="py-24 relative">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-                <h2 class="text-xs font-bold text-blue-500 tracking-[0.25em] uppercase mb-3">Corporate Identity</h2>
-                <h3 class="text-3xl lg:text-5xl font-black text-white tracking-tight mb-6">About Quantox Technologies</h3>
-                <p class="text-gray-400 leading-relaxed mb-6">
-                    Quantox Technologies Pvt. Ltd. is an industry-leading multi-domain IT corporation dedicated to delivering top-tier technical ecosystems. We engineer scalable frameworks that build robust pipelines across enterprise architecture vectors, political data modeling operations, and private market components.
+    <!-- CORPORATE ABOUT US OVERVIEW SECTION -->
+    <section id="about" class="py-28 relative">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-6">
+                <div>
+                    <h2 class="text-xs font-bold text-blue-500 tracking-[0.25em] uppercase font-mono mb-3">Corporate Spectrum</h2>
+                    <h3 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight heading-font">About Quantox Technologies</h3>
+                </div>
+                <p class="text-gray-400 text-base leading-relaxed">
+                    Quantox Technologies Pvt. Ltd. stands as a premier multi-domain IT specialist dedicated to delivering scalable technological frameworks. We create, optimize, and execute comprehensive software solutions engineered specifically to navigate complex business roadblocks, political data modeling operations, and agricultural enterprise sectors with absolute precision.
                 </p>
                 <div class="space-y-4 font-semibold text-sm">
-                    <div class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-blue-500 mt-1"></i> <span class="text-gray-300">End-To-End Infrastructure Deployment Strategy</span></div>
-                    <div class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-indigo-500 mt-1"></i> <span class="text-gray-300">Data-Driven Analytical Spatial Decision Support Systems</span></div>
-                    <div class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-purple-500 mt-1"></i> <span class="text-gray-300">Trusted Government & Multi-Domain Enterprise Partner Matrix</span></div>
+                    <div class="flex items-start gap-3">
+                        <div class="mt-1 w-5 h-5 rounded-md bg-blue-500/10 text-blue-400 flex items-center justify-center text-xs border border-blue-500/20"><i class="fa-solid fa-check"></i></div>
+                        <span class="text-gray-300">End-to-End Enterprise Software Deployment Infrastructures</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="mt-1 w-5 h-5 rounded-md bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xs border border-indigo-500/20"><i class="fa-solid fa-check"></i></div>
+                        <span class="text-gray-300">Data-Driven Analytical Spatial Decision Support Matrices</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="mt-1 w-5 h-5 rounded-md bg-purple-500/10 text-purple-400 flex items-center justify-center text-xs border border-purple-500/20"><i class="fa-solid fa-check"></i></div>
+                        <span class="text-gray-300">Trusted Corporate & Public-Domain High Availability Partner</span>
+                    </div>
                 </div>
             </div>
-            <div class="bg-gray-900/40 border border-gray-800 rounded-3xl p-8 relative overflow-hidden group hover:border-gray-700 transition-colors">
-                <div class="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-transparent"></div>
-                <h4 class="text-lg font-bold text-white mb-4"><i class="fa-solid fa-diagram-project text-blue-500 mr-2"></i> Operational Execution Roadmap</h4>
+            
+            <!-- Structural Workflow Presentation Block -->
+            <div class="bg-gray-900/40 border border-gray-800 rounded-3xl p-8 relative overflow-hidden group hover:border-gray-700/80 transition-colors duration-300 glass-panel">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-blue-600/5 rounded-full blur-2xl"></div>
+                <h4 class="text-xl font-bold text-white mb-6 heading-font flex items-center gap-2"><i class="fa-solid fa-network-wired text-blue-500 text-base"></i> Operational Execution Steps</h4>
                 <div class="space-y-6 relative z-10 text-sm">
-                    <div class="border-l-2 border-blue-600 pl-4">
-                        <h5 class="font-bold text-white">Step 1: Deep Discovery Matrix</h5>
-                        <p class="text-gray-400 text-xs">Architecting system requirements profiles and custom parameters mapping schemas.</p>
+                    <div class="border-l-2 border-blue-600 pl-5 relative">
+                        <div class="absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-blue-600 shadow shadow-blue-500"></div>
+                        <h5 class="font-bold text-white text-base">1. In-Depth Project Analysis Matrix</h5>
+                        <p class="text-gray-400 text-xs mt-1 leading-relaxed">Mapping core technical specifications, localized compliance factors, and multi-tier system requirement parameters.</p>
                     </div>
-                    <div class="border-l-2 border-indigo-600 pl-4">
-                        <h5 class="font-bold text-white">Step 2: Engineering & Assembly</h5>
-                        <p class="text-gray-400 text-xs">Writing low-latency software assets, cross-platform apps, and high-performance user spaces.</p>
+                    <div class="border-l-2 border-indigo-600 pl-5 relative">
+                        <div class="absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-indigo-600 shadow shadow-indigo-500"></div>
+                        <h5 class="font-bold text-white text-base">2. Advanced Engineering Framework</h5>
+                        <p class="text-gray-400 text-xs mt-1 leading-relaxed">Developing low-latency codebases, secure system integrations, and highly adaptive user interface wrappers.</p>
                     </div>
-                    <div class="border-l-2 border-purple-600 pl-4">
-                        <h5 class="font-bold text-white">Step 3: Secure Live Deployment</h5>
-                        <p class="text-gray-400 text-xs">Seamless platform launch coupled with real-time analytics sync and lifetime core updates.</p>
+                    <div class="border-l-2 border-purple-600 pl-5 relative">
+                        <div class="absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-purple-600 shadow shadow-purple-500"></div>
+                        <h5 class="font-bold text-white text-base">3. Strategic System Launch</h5>
+                        <p class="text-gray-400 text-xs mt-1 leading-relaxed">Deploying onto cloud networks paired with real-time operational dashboard monitoring pipelines and lifetime optimizations.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CORE REVENUE & SERVICE MATRICES (SERVICES OFFERED) -->
-    <section id="services" class="py-24 bg-gray-950/50 border-y border-gray-900">
+    <!-- CORE VERTICAL CAPABILITIES (SERVICES SECTION) -->
+    <section id="services" class="py-28 bg-gray-950/40 border-y border-gray-900/80">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-xs font-bold text-purple-500 tracking-[0.25em] uppercase mb-3">Capabilities Matrix</h2>
-                <p class="text-3xl lg:text-5xl font-black text-white tracking-tight">Services Engineered For Scalability</p>
+            <div class="text-center mb-20">
+                <h2 class="text-xs font-bold text-purple-500 tracking-[0.25em] uppercase font-mono mb-3">Service Spectrum</h2>
+                <p class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight heading-font">Our Multi-Domain IT Services</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- GIS & Remote Sensing -->
-                <div class="p-8 rounded-2xl bg-gray-900/30 border border-gray-800/80 hover:border-blue-500/40 transition-all group">
-                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
-                        <i class="fa-solid fa-earth-americas"></i>
+                <!-- GIS Service Card -->
+                <div class="p-8 rounded-2xl bg-gray-900/30 border border-gray-800/80 hover:border-blue-500/40 hover:bg-gray-900/50 transition-all duration-300 group shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-blue-500/10 text-blue-400 border border-blue-500/20 flex items-center justify-center text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 transition-all duration-300 shadow-inner">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 heading-font tracking-wide">GIS & Remote Sensing</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">Advanced satellite data compilation algorithms, precision regional configuration models, and specialized topological analytical layers tailored explicitly for scaling smart municipality operations.</p>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">GIS & Remote Sensing</h3>
-                    <p class="text-sm text-gray-400 leading-relaxed">Geospatial solutions engineered using advanced localized satellite imagery interpretation algorithms, custom layout mappings, and specialized regional analysis fields for smart micro-cities.</p>
+                    <div class="mt-6 pt-4 border-t border-gray-900/40 text-xs text-blue-400 font-mono group-hover:translate-x-1 transition-transform inline-flex items-center gap-1 cursor-pointer">Spatial Integration Modules <i class="fa-solid fa-angle-right text-[10px]"></i></div>
                 </div>
 
-                <!-- Custom Software Development -->
-                <div class="p-8 rounded-2xl bg-gray-900/30 border border-gray-800/80 hover:border-indigo-500/40 transition-all group">
-                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-all">
-                        <i class="fa-solid fa-terminal"></i>
+                <!-- Custom Software Service Card -->
+                <div class="p-8 rounded-2xl bg-gray-900/30 border border-gray-800/80 hover:border-indigo-500/40 hover:bg-gray-900/50 transition-all duration-300 group shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 flex items-center justify-center text-2xl mb-6 group-hover:bg-indigo-600 group-hover:text-white group-hover:border-indigo-600 transition-all duration-300 shadow-inner">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 heading-font tracking-wide">Software Development</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">Architecting secure desktop software applications, isolated native frameworks, and automated system scripts designed purposefully to clear structural cross-department network delays.</p>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Software Development</h3>
-                    <p class="text-sm text-gray-400 leading-relaxed">Scalable architecture engines optimized for custom desktop interfaces and secure standalone instances tailored to solve dense cross-department complex enterprise blockages.</p>
+                    <div class="mt-6 pt-4 border-t border-gray-900/40 text-xs text-indigo-400 font-mono group-hover:translate-x-1 transition-transform inline-flex items-center gap-1 cursor-pointer">Native Structural Pipelines <i class="fa-solid fa-angle-right text-[10px]"></i></div>
                 </div>
 
-                <!-- Web Design Matrix -->
-                <div class="p-8 rounded-2xl bg-gray-900/30 border border-gray-800/80 hover:border-purple-500/40 transition-all group">
-                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-6 group-hover:bg-purple-600 group-hover:text-white transition-all">
-                        <i class="fa-solid fa-window-maximize"></i>
+                <!-- Web Development Service Card -->
+                <div class="p-8 rounded-2xl bg-gray-900/30 border border-gray-800/80 hover:border-purple-500/40 hover:bg-gray-900/50 transition-all duration-300 group shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 border border-purple-500/20 flex items-center justify-center text-2xl mb-6 group-hover:bg-purple-600 group-hover:text-white group-hover:border-purple-600 transition-all duration-300 shadow-inner">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 heading-font tracking-wide">Web Design & Dev</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">Developing ultra-fast commercial websites, optimized online enterprise showcases, responsive brand portals, and multi-layered web spaces completely tuned for organic search ranking loops.</p>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Web & UI/UX Architectures</h3>
-                    <p class="text-sm text-gray-400 leading-relaxed">Developing ultra-fast, responsive storefront assets, digital portfolio spaces, and secure multi-tier e-commerce frameworks completely optimized for top search engines.</p>
+                    <div class="mt-6 pt-4 border-t border-gray-900/40 text-xs text-purple-400 font-mono group-hover:translate-x-1 transition-transform inline-flex items-center gap-1 cursor-pointer">SEO-Ready Frontend Architecture <i class="fa-solid fa-angle-right text-[10px]"></i></div>
                 </div>
 
-                <!-- Android/iOS App Development -->
-                <div class="p-8 rounded-2xl bg-gray-900/30 border border-gray-800/80 hover:border-pink-400/40 transition-all group">
-                    <div class="w-12 h-12 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-xl mb-6 group-hover:bg-pink-500 group-hover:text-white transition-all">
-                        <i class="fa-solid fa-mobile-screen"></i>
+                <!-- Mobile Development Service Card -->
+                <div class="p-8 rounded-2xl bg-gray-900/30 border border-gray-800/80 hover:border-pink-500/40 hover:bg-gray-900/50 transition-all duration-300 group shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-pink-500/10 text-pink-400 border border-pink-500/20 flex items-center justify-center text-2xl mb-6 group-hover:bg-pink-600 group-hover:text-white group-hover:border-pink-600 transition-all duration-300 shadow-inner">
+                            <i class="fa-solid fa-mobile-button"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 heading-font tracking-wide">Mobile Application</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">Building fluid native and cross-platform mobile application packages for Android and iOS systems, embedding automated offline sync trees and secure data encryption logic blocks.</p>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Mobile Systems Engine</h3>
-                    <p class="text-sm text-gray-400 leading-relaxed">High-performance cross-platform Android and iOS application packages focusing on responsive interactions, fluid logic nodes, and secure system database integration parameters.</p>
+                    <div class="mt-6 pt-4 border-t border-gray-900/40 text-xs text-pink-400 font-mono group-hover:translate-x-1 transition-transform inline-flex items-center gap-1 cursor-pointer">Cross-Platform Engine Sync <i class="fa-solid fa-angle-right text-[10px]"></i></div>
                 </div>
 
-                <!-- Digital Marketing Matrix -->
-                <div class="p-8 rounded-2xl bg-gray-900/30 border border-gray-800/80 hover:border-emerald-400/40 transition-all group">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-6 group-hover:bg-emerald-500 group-hover:text-white transition-all">
-                        <i class="fa-solid fa-chart-line"></i>
+                <!-- Digital Marketing Service Card -->
+                <div class="p-8 rounded-2xl bg-gray-900/30 border border-gray-800/80 hover:border-emerald-500/40 hover:bg-gray-900/50 transition-all duration-300 group shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-600 group-hover:text-white group-hover:border-emerald-600 transition-all duration-300 shadow-inner">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 heading-font tracking-wide">Digital Marketing</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">Data-driven online conversion management, structured search network visibility optimization, and hyper-targeted lead routing deployments engineered to maximize active pipeline generation.</p>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Digital Marketing & Strategy</h3>
-                    <p class="text-sm text-gray-400 leading-relaxed">Data-driven performance campaigns, precision targeted optimization channels, and strategic visibility roadmaps built to convert corporate lead matrices across active platforms.</p>
+                    <div class="mt-6 pt-4 border-t border-gray-900/40 text-xs text-emerald-400 font-mono group-hover:translate-x-1 transition-transform inline-flex items-center gap-1 cursor-pointer">Conversion Funnel Analytics <i class="fa-solid fa-angle-right text-[10px]"></i></div>
                 </div>
 
-                <!-- Political Campaigns & Gaming Studio -->
-                <div class="p-8 rounded-2xl bg-gray-900/30 border border-gray-800/80 hover:border-amber-400/40 transition-all group">
-                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-6 group-hover:bg-amber-500 group-hover:text-white transition-all">
-                        <i class="fa-solid fa-gamepad"></i>
+                <!-- Political & Gaming Card -->
+                <div class="p-8 rounded-2xl bg-gray-900/30 border border-gray-800/80 hover:border-amber-500/40 hover:bg-gray-900/50 transition-all duration-300 group shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-white group-hover:border-amber-500 transition-all duration-300 shadow-inner">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 heading-font tracking-wide">Political & Gaming Studio</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">Comprehensive statistical analysis matrices for regional communication modeling alongside immersive, high-fidelity custom media interactive applications built in our specialized simulation laboratories.</p>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Campaign Analytics & Gaming</h3>
-                    <p class="text-sm text-gray-400 leading-relaxed">Deep constituent statistical data modeling for regional analytics campaigns alongside immersive, rich, cross-platform multimedia simulation products from our custom gaming labs.</p>
+                    <div class="mt-6 pt-4 border-t border-gray-900/40 text-xs text-amber-400 font-mono group-hover:translate-x-1 transition-transform inline-flex items-center gap-1 cursor-pointer">Simulation Environment Controls <i class="fa-solid fa-angle-right text-[10px]"></i></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- LIVE PROPRIETARY PRODUCTS & LIVE DEPLOYMENTS MATRIX (SAAS LANDSCAPE) -->
-    <section id="products" class="py-24 relative">
+    <!-- LIVE RUNNING SAAS PLATFORMS (PRODUCTS SECTION) -->
+    <section id="products" class="py-28 relative">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-xs font-bold text-blue-500 tracking-[0.25em] uppercase mb-3">Software Ecosystem Portfolio</h2>
-                <h3 class="text-3xl lg:text-5xl font-black text-white tracking-tight">Active Platforms Accelerating Enterprise Operations</h3>
+            <div class="text-center mb-20">
+                <h2 class="text-xs font-bold text-blue-500 tracking-[0.25em] uppercase font-mono mb-3">Enterprise Deployments</h2>
+                <h3 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight heading-font">Our Products</h3>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- SmartHazri Product Grid -->
-                <div class="bg-gray-900/30 border border-gray-800 rounded-2xl p-8 hover:border-gray-700 transition-all flex flex-col justify-between">
-                    <div>
-                        <div class="flex justify-between items-start mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <!-- SmartHazri Product Framework -->
+                <div class="bg-gray-900/20 border border-gray-850 rounded-2xl p-8 hover:border-gray-700 hover:bg-gray-900/30 transition-all duration-300 flex flex-col justify-between shadow-lg glass-panel">
+                    <div class="space-y-6">
+                        <div class="flex justify-between items-start">
                             <div>
-                                <h4 class="text-2xl font-bold text-white">SmartHazri — स्मार्ट हजेरी</h4>
-                                <p class="text-xs text-blue-400 font-mono mt-1">GPS-Based Workforce Tracking Solution</p>
+                                <h4 class="text-2xl font-bold text-white heading-font tracking-wide">SmartHazri — स्मार्ट हजेरी</h4>
+                                <p class="text-xs text-blue-400 font-mono mt-1">Advanced Workforce Tracking Infrastructure</p>
                             </div>
-                            <span class="text-[10px] font-bold text-emerald-400 bg-emerald-950 border border-emerald-900 px-3 py-1 rounded-full uppercase">Enterprise SaaS</span>
+                            <span class="text-[10px] font-bold text-emerald-400 bg-emerald-950/60 border border-emerald-900/50 px-3 py-1 rounded-full uppercase tracking-wider font-mono">Live Matrix</span>
                         </div>
-                        <p class="text-sm text-gray-400 leading-relaxed mb-6">
-                            Eliminating expensive archaic hardware setups through real-time GPS-radius workspace check-ins, automated salary engine computations, WhatsApp alerting parameters, and specialized compliance reporting matrices. Optimized completely for factories, local gram panchayats, and corporate entities.
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            A specialized GPS-fenced coordination engine engineered to optimize attendance logistics without relying on static external hardware loops. Features automated wage calculation matrix adjustments, instant WhatsApp alerts, and standardized field compliance logs. Perfect for factory layouts, local gram panchayats, and modern corporate environments.
                         </p>
-                        <div class="grid grid-cols-3 gap-4 mb-6 text-center bg-gray-950/60 rounded-xl p-4 border border-gray-900">
-                            <div><div class="font-bold text-white">500+</div><div class="text-[10px] text-gray-500">Companies</div></div>
-                            <div><div class="font-bold text-white">15,000+</div><div class="text-[10px] text-gray-500">Users Monitored</div></div>
-                            <div><div class="font-bold text-white">99.9%</div><div class="text-[10px] text-gray-500">Live Uptime</div></div>
+                        <div class="grid grid-cols-3 gap-4 text-center bg-gray-950/60 rounded-xl p-4 border border-gray-900/80 font-mono">
+                            <div><div class="text-xl font-bold text-white heading-font">500+</div><div class="text-[10px] text-gray-500 uppercase font-semibold">Deployments</div></div>
+                            <div><div class="text-xl font-bold text-white heading-font">15,000+</div><div class="text-[10px] text-gray-500 uppercase font-semibold">Active Profiles</div></div>
+                            <div><div class="text-xl font-bold text-white heading-font">99.9%</div><div class="text-[10px] text-gray-500 uppercase font-semibold">Uptime Float</div></div>
                         </div>
                     </div>
-                    <a href="https://smarthazri.com" target="_blank" class="w-full text-center py-3 rounded-xl border border-gray-800 bg-gray-900 hover:bg-gray-800 font-bold text-sm text-white transition-colors">Access SmartHazri Pipeline <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i></a>
+                    <div class="mt-8">
+                        <a href="https://smarthazri.com" target="_blank" class="w-full h-12 inline-flex items-center justify-center rounded-xl border border-gray-800 bg-gray-900/80 hover:bg-gray-800 text-sm font-bold text-white hover:text-blue-400 transition-all duration-200">
+                            Access SmartHazri Platform <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i>
+                        </a>
+                    </div>
                 </div>
 
-                <!-- KRUSHIGATHA Product Grid -->
-                <div class="bg-gray-900/30 border border-gray-800 rounded-2xl p-8 hover:border-gray-700 transition-all flex flex-col justify-between">
-                    <div>
-                        <div class="flex justify-between items-start mb-6">
+                <!-- KRUSHIGATHA Product Framework -->
+                <div class="bg-gray-900/20 border border-gray-850 rounded-2xl p-8 hover:border-gray-700 hover:bg-gray-900/30 transition-all duration-300 flex flex-col justify-between shadow-lg glass-panel">
+                    <div class="space-y-6">
+                        <div class="flex justify-between items-start">
                             <div>
-                                <h4 class="text-2xl font-bold text-white">KRUSHIGATHA — कृषीगाथा</h4>
-                                <p class="text-xs text-indigo-400 font-mono mt-1">Agriculture Value-Chain Management Cloud</p>
+                                <h4 class="text-2xl font-bold text-white heading-font tracking-wide">KRUSHIGATHA — कृषीगाथा</h4>
+                                <p class="text-xs text-indigo-400 font-mono mt-1">Agricultural Enterprise Ledger Cloud</p>
                             </div>
-                            <span class="text-[10px] font-bold text-purple-400 bg-purple-950 border border-purple-900 px-3 py-1 rounded-full uppercase">AgriTech Suite</span>
+                            <span class="text-[10px] font-bold text-purple-400 bg-purple-950/60 border border-purple-900/50 px-3 py-1 rounded-full uppercase tracking-wider font-mono">AgriTech Node</span>
                         </div>
-                        <p class="text-sm text-gray-400 leading-relaxed mb-6">
-                            Robust infrastructure handles full automated micro-ledger accounts, direct customer credit records configuration, stock valuation notifications, CGST/SGST matrix updates, and full offline-enabled progressive workspace app (PWA) sync capabilities.
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            Robust digital value-chain solution managing integrated customer micro-ledgers, real-time outstanding balance data streams, batch stock notifications, automated CGST/SGST tax calculation arrays, and complete offline capability parameters via progressive web app caching arrays.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="text-[11px] font-mono px-3 py-1 bg-gray-950 rounded border border-gray-900 text-gray-400">Offline Ledger Cache</span>
-                            <span class="text-[11px] font-mono px-3 py-1 bg-gray-950 rounded border border-gray-900 text-gray-400">Automated Tax Invoicing</span>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="text-[11px] font-mono px-3 py-1.5 bg-gray-950/80 rounded border border-gray-900 text-gray-400">Offline Workspace Sync</span>
+                            <span class="text-[11px] font-mono px-3 py-1.5 bg-gray-950/80 rounded border border-gray-900 text-gray-400">Automated Billing Ledger</span>
                         </div>
                     </div>
-                    <a href="https://www.krushigatha.com" target="_blank" class="w-full text-center py-3 rounded-xl border border-gray-800 bg-gray-900 hover:bg-gray-800 font-bold text-sm text-white transition-colors">Launch KRUSHIGATHA Instance <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i></a>
+                    <div class="mt-8">
+                        <a href="https://www.krushigatha.com" target="_blank" class="w-full h-12 inline-flex items-center justify-center rounded-xl border border-gray-800 bg-gray-900/80 hover:bg-gray-800 text-sm font-bold text-white hover:text-indigo-400 transition-all duration-200">
+                            Launch KRUSHIGATHA Instance <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i>
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Dukaandar Product Grid -->
-                <div class="bg-gray-900/30 border border-gray-800 rounded-2xl p-8 hover:border-gray-700 transition-all flex flex-col justify-between">
-                    <div>
-                        <div class="flex justify-between items-start mb-6">
+                <!-- Dukaandar Product Framework -->
+                <div class="bg-gray-900/20 border border-gray-850 rounded-2xl p-8 hover:border-gray-700 hover:bg-gray-900/30 transition-all duration-300 flex flex-col justify-between shadow-lg glass-panel">
+                    <div class="space-y-6">
+                        <div class="flex justify-between items-start">
                             <div>
-                                <h4 class="text-2xl font-bold text-white">Dukaandar — दुकानदार</h4>
-                                <p class="text-xs text-purple-400 font-mono mt-1">Hardware Retail SaaS Accounting Engine</p>
+                                <h4 class="text-2xl font-bold text-white heading-font tracking-wide">Dukaandar — दुकानदार</h4>
+                                <p class="text-xs text-purple-400 font-mono mt-1">Hardware Retail ERP Accounting Module</p>
                             </div>
-                            <span class="text-[10px] font-bold text-pink-400 bg-pink-950 border border-pink-900 px-3 py-1 rounded-full uppercase">SaaS Engine</span>
+                            <span class="text-[10px] font-bold text-pink-400 bg-pink-950/60 border border-pink-900/50 px-3 py-1 rounded-full uppercase tracking-wider font-mono">SaaS Architecture</span>
                         </div>
-                        <p class="text-sm text-gray-400 leading-relaxed mb-6">
-                            A highly optimized subscription portal explicitly tailored for commercial multi-category store operators. Integrates multi-device transactional syncing, batch inventory tracking thresholds, and instant client billing modules.
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            A highly optimized utility portal custom-tailored for retail traders and hardware establishment networks. Seamlessly standardizes cloud inventory logging thresholds, transaction records balancing, and streamlined direct customer invoicing parameters.
                         </p>
                     </div>
-                    <a href="https://www.dukaandar.shop" target="_blank" class="w-full text-center py-3 rounded-xl border border-gray-800 bg-gray-900 hover:bg-gray-800 font-bold text-sm text-white transition-colors">Explore Dukaandar Portal <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i></a>
+                    <div class="mt-8">
+                        <a href="https://www.dukaandar.shop" target="_blank" class="w-full h-12 inline-flex items-center justify-center rounded-xl border border-gray-800 bg-gray-900/80 hover:bg-gray-800 text-sm font-bold text-white hover:text-purple-400 transition-all duration-200">
+                            Explore Dukaandar Portal <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i>
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Grampanchayat Portal Product Grid -->
-                <div class="bg-gray-900/30 border border-gray-800 rounded-2xl p-8 hover:border-gray-700 transition-all flex flex-col justify-between">
-                    <div>
-                        <div class="flex justify-between items-start mb-6">
+                <!-- Grampanchayat Portal Product Framework -->
+                <div class="bg-gray-900/20 border border-gray-850 rounded-2xl p-8 hover:border-gray-700 hover:bg-gray-900/30 transition-all duration-300 flex flex-col justify-between shadow-lg glass-panel">
+                    <div class="space-y-6">
+                        <div class="flex justify-between items-start">
                             <div>
-                                <h4 class="text-2xl font-bold text-white">Online Seva Portal — ग्रामपंचायत कडेपूर</h4>
-                                <p class="text-xs text-emerald-400 font-mono mt-1">E-Governance Digital Spatial Node</p>
+                                <h4 class="text-2xl font-bold text-white heading-font tracking-wide">Online Seva Portal — ग्रामपंचायत कडेपूर</h4>
+                                <p class="text-xs text-emerald-400 font-mono mt-1">Public Governance System Interface Node</p>
                             </div>
-                            <span class="text-[10px] font-bold text-blue-400 bg-blue-950 border border-blue-900 px-3 py-1 rounded-full uppercase">GovTech Node</span>
+                            <span class="text-[10px] font-bold text-blue-400 bg-blue-950/60 border border-blue-900/50 px-3 py-1 rounded-full uppercase tracking-wider font-mono">GovTech Matrix</span>
                         </div>
-                        <p class="text-sm text-gray-400 leading-relaxed mb-6">
-                            Empowering transactional public administration via automated processing tracking arrays for micro-certification layouts (Birth/Death/Marriage records) integrated seamlessly with intellectual property GIS property mappings.
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            Accelerating interactive public record deployments by processing birth, marriage, and death documentation streams combined with geographic smart mapping arrays for tracking property assessments effortlessly.
                         </p>
-                        <div class="text-[11px] font-mono text-gray-500 mb-6 flex items-center gap-2">
-                            <i class="fa-solid fa-shield-halved text-emerald-400"></i> Over 1,553+ Public System Applications Securely Processed
+                        <div class="text-[12px] font-mono text-gray-500 flex items-center gap-2 pt-2">
+                            <i class="fa-solid fa-shield-halved text-emerald-400"></i> Over 1,553+ Public Welfare Documents Verified Securely
                         </div>
                     </div>
-                    <a href="https://gpkadepur.in" target="_blank" class="w-full text-center py-3 rounded-xl border border-gray-800 bg-gray-900 hover:bg-gray-800 font-bold text-sm text-white transition-colors">Review GovTech Architecture <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i></a>
+                    <div class="mt-8">
+                        <a href="https://gpkadepur.in" target="_blank" class="w-full h-12 inline-flex items-center justify-center rounded-xl border border-gray-800 bg-gray-900/80 hover:bg-gray-800 text-sm font-bold text-white hover:text-emerald-400 transition-all duration-200">
+                            Review GovTech Architecture <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <!-- Additional Client/App Endpoints Anchor Segment -->
-            <div class="mt-8 p-6 rounded-2xl bg-gray-950 border border-gray-900 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <!-- Integrated Footnote Operations Anchor Node -->
+            <div class="mt-10 p-6 rounded-2xl bg-gray-950 border border-gray-900 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
                 <div class="flex items-center gap-4">
-                    <div class="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 text-lg"><i class="fa-solid fa-suitcase-medical"></i></div>
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 border border-purple-500/20 flex items-center justify-center text-xl shadow-inner"><i class="fa-solid fa-heart-pulse"></i></div>
                     <div>
-                        <h5 class="text-sm font-bold text-white">Happy Medicare Stock Inward System</h5>
-                        <p class="text-xs text-gray-500">Fully validated medicine stock deployment module live on consumer app network ecosystems.</p>
+                        <h5 class="text-base font-bold text-white heading-font">Happy Medicare Stock Inward System</h5>
+                        <p class="text-xs text-gray-500 leading-relaxed">Active inventory auditing architecture sync pipeline live inside pharmaceutical distribution frameworks.</p>
                     </div>
                 </div>
-                <div class="text-xs font-semibold text-gray-400">Collaborating Entity: <span class="text-white">Giants Welfare Foundation 2C</span></div>
+                <div class="flex items-center gap-4 text-xs font-mono">
+                    <div class="text-gray-500 uppercase font-semibold">Collaborating Entity:</div>
+                    <span class="px-4 py-1.5 bg-gray-900 text-gray-300 rounded-lg border border-gray-800">Giants Welfare Foundation 2C</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- SYSTEM MODULE ARCHITECTURE & CORPORATE VALUES SECTION -->
-    <section id="value" class="py-24 bg-gray-950/40 border-y border-gray-900">
+    <!-- CORE STRATEGIC VALUE CONFIGURATIONS SECTION -->
+    <section id="values" class="py-28 bg-gray-950/40 border-y border-gray-900/80">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16">
-            <div>
-                <h2 class="text-xs font-bold text-indigo-400 tracking-[0.25em] uppercase mb-3">Ecosystem Strengths</h2>
-                <h3 class="text-3xl lg:text-4xl font-black text-white mb-8">Features Driving High-Performance Modern Success</h3>
+            <div class="space-y-8">
+                <div>
+                    <h2 class="text-xs font-bold text-indigo-400 tracking-[0.25em] uppercase font-mono mb-3">System Frameworks</h2>
+                    <h3 class="text-3xl sm:text-4xl font-black text-white heading-font">Features Driving Success</h3>
+                </div>
                 <div class="space-y-6">
-                    <div class="flex gap-4">
-                        <div class="w-8 h-8 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-400 font-bold text-sm">01</div>
+                    <div class="flex gap-4 group">
+                        <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400 font-mono font-bold text-sm flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-inner">01</div>
                         <div>
-                            <h4 class="text-base font-bold text-white mb-1">Real-Time Data Streams & Interactive Dashboards</h4>
-                            <p class="text-xs text-gray-400 leading-relaxed">Instant telemetry data rendering and cloud metrics calculations ensuring decision matrices stay accurately updated.</p>
+                            <h4 class="text-lg font-bold text-white mb-1 heading-font">Real-Time Data & Interactive Dashboards</h4>
+                            <p class="text-xs text-gray-400 leading-relaxed">Instant processing metric streams and user interaction telemetries ensuring centralized business parameters stay accurately updated.</p>
                         </div>
                     </div>
-                    <div class="flex gap-4">
-                        <div class="w-8 h-8 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 font-bold text-sm">02</div>
+                    <div class="flex gap-4 group">
+                        <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 font-mono font-bold text-sm flex items-center justify-center group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300 shadow-inner">02</div>
                         <div>
-                            <h4 class="text-base font-bold text-white mb-1">AI-Powered GIS Custom Remote Sensing Models</h4>
-                            <p class="text-xs text-gray-400 leading-relaxed">Leveraging algorithmic data processing parameters over raw topological mapping sheets seamlessly.</p>
+                            <h4 class="text-lg font-bold text-white mb-1 heading-font">AI-Powered GIS Models</h4>
+                            <p class="text-xs text-gray-400 leading-relaxed">Leveraging advanced structural analytical parameters directly onto localized regional mapping data arrays smoothly.</p>
                         </div>
                     </div>
-                    <div class="flex gap-4">
-                        <div class="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400 font-bold text-sm">03</div>
+                    <div class="flex gap-4 group">
+                        <div class="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 font-mono font-bold text-sm flex items-center justify-center group-hover:bg-purple-600 group-hover:text-white transition-all duration-300 shadow-inner">03</div>
                         <div>
-                            <h4 class="text-base font-bold text-white mb-1">Cross-Platform Execution Matrices</h4>
-                            <p class="text-xs text-gray-400 leading-relaxed">Complete offline app caching states allowing execution nodes to perform cleanly over unstable connection pools.</p>
+                            <h4 class="text-lg font-bold text-white mb-1 heading-font">Cross-Platform Capabilities</h4>
+                            <p class="text-xs text-gray-400 leading-relaxed">Engineered to support adaptive storage data models allowing operational execution nodes to function over fluctuating networks.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div>
-                <h2 class="text-xs font-bold text-pink-400 tracking-[0.25em] uppercase mb-3">Corporate Constitution</h2>
-                <h3 class="text-3xl lg:text-4xl font-black text-white mb-8">Our Undeviating Value Pillars</h3>
+            <div class="space-y-8">
+                <div>
+                    <h2 class="text-xs font-bold text-pink-400 tracking-[0.25em] uppercase font-mono mb-3">Enterprise Governance</h2>
+                    <h3 class="text-3xl sm:text-4xl font-black text-white heading-font">Our Core Values</h3>
+                </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div class="p-5 rounded-xl bg-gray-900/40 border border-gray-800">
-                        <h4 class="text-sm font-bold text-white mb-2"><i class="fa-solid fa-users text-blue-400 mr-2"></i> Client-Centric</h4>
-                        <p class="text-xs text-gray-500 leading-relaxed">Every iteration loop prioritizes the precise real-world operational challenges of our partner entities.</p>
+                    <div class="p-6 rounded-2xl bg-gray-900/40 border border-gray-800 hover:border-gray-700/80 transition-colors duration-300">
+                        <h4 class="text-base font-bold text-white mb-2 heading-font flex items-center gap-2"><i class="fa-solid fa-users text-blue-400 text-sm"></i> Client-Centric</h4>
+                        <p class="text-xs text-gray-500 leading-relaxed">Prioritizing the optimization of real-world workflow barriers specific to our partner organizations.</p>
                     </div>
-                    <div class="p-5 rounded-xl bg-gray-900/40 border border-gray-800">
-                        <h4 class="text-sm font-bold text-white mb-2"><i class="fa-solid fa-lightbulb text-indigo-400 mr-2"></i> Innovation-Driven</h4>
-                        <p class="text-xs text-gray-500 leading-relaxed">Continually rewriting modern technology limits across custom structural platforms.</p>
+                    <div class="p-6 rounded-2xl bg-gray-900/40 border border-gray-800 hover:border-gray-700/80 transition-colors duration-300">
+                        <h4 class="text-base font-bold text-white mb-2 heading-font flex items-center gap-2"><i class="fa-solid fa-lightbulb text-indigo-400 text-sm"></i> Innovation</h4>
+                        <p class="text-xs text-gray-500 leading-relaxed">Continually pushing computational thresholds to design innovative native system structures.</p>
                     </div>
-                    <div class="p-5 rounded-xl bg-gray-900/40 border border-gray-800">
-                        <h4 class="text-sm font-bold text-white mb-2"><i class="fa-solid fa-leaf text-purple-400 mr-2"></i> Sustainability</h4>
-                        <p class="text-xs text-gray-500 leading-relaxed">Engineering clean code systems minimizing operational compute maintenance overheads.</p>
+                    <div class="p-6 rounded-2xl bg-gray-900/40 border border-gray-800 hover:border-gray-700/80 transition-colors duration-300">
+                        <h4 class="text-base font-bold text-white mb-2 heading-font flex items-center gap-2"><i class="fa-solid fa-seedling text-purple-400 text-sm"></i> Sustainability</h4>
+                        <p class="text-xs text-gray-500 leading-relaxed">Developing resource-efficient algorithms that dramatically minimize operational compute maintenance costs.</p>
                     </div>
-                    <div class="p-5 rounded-xl bg-gray-900/40 border border-gray-800">
-                        <h4 class="text-sm font-bold text-white mb-2"><i class="fa-solid fa-shield text-pink-400 mr-2"></i> Transparency</h4>
-                        <p class="text-xs text-gray-500 leading-relaxed">Strict adherence to copyright parameters and data encryption vectors globally.</p>
+                    <div class="p-6 rounded-2xl bg-gray-900/40 border border-gray-800 hover:border-gray-700/80 transition-colors duration-300">
+                        <h4 class="text-base font-bold text-white mb-2 heading-font flex items-center gap-2"><i class="fa-solid fa-gavel text-pink-400 text-sm"></i> Transparency</h4>
+                        <p class="text-xs text-gray-500 leading-relaxed">Strict compliance with strict system data parameters and international software framework protocols.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- INGESTION SYNERGY LEAD PORTAL (CONTACT US FORM) -->
-    <section id="contact" class="py-24 relative bg-gradient-to-b from-transparent to-gray-950">
+    <!-- INGESTION DATA PIPELINE SYNERGY GATEWAY (CONTACT FORM) -->
+    <section id="contact" class="py-28 relative bg-gradient-to-b from-transparent to-gray-950">
         <div class="max-w-4xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-xs font-bold text-blue-500 tracking-[0.25em] uppercase mb-3">Get In Touch Matrix</h2>
-                <h3 class="text-3xl lg:text-5xl font-black text-white mb-4">Initialize Your Next Large-Scale Innovation</h3>
-                <p class="text-gray-400 text-sm max-w-xl mx-auto">Connect with Quantox engineering teams today to build robust high-fidelity operations platforms.</p>
+            <div class="text-center mb-16 space-y-3">
+                <h2 class="text-xs font-bold text-blue-500 tracking-[0.25em] uppercase font-mono">Connection Gateway</h2>
+                <h3 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white heading-font">Contact Us</h3>
+                <p class="text-gray-400 text-sm max-w-xl mx-auto leading-relaxed">Initiate a dialogue with our systems engineering panel to scale your infrastructure framework arrays smoothly.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                <div class="p-5 bg-gray-900/50 border border-gray-800 rounded-2xl flex items-center gap-4">
-                    <div class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400"><i class="fa-solid fa-envelope"></i></div>
-                    <div><div class="text-xs text-gray-500 font-bold">Mailbox Relay</div><a href="mailto:contact@qmipl.com" class="text-sm font-semibold text-white hover:underline">contact@qmipl.com</a></div>
+            <!-- Location Coordination Information Blocks -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 font-mono">
+                <div class="p-5 bg-gray-900/40 border border-gray-800 rounded-2xl flex items-center gap-4 glass-panel">
+                    <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 shadow-inner"><i class="fa-solid fa-envelope"></i></div>
+                    <div><div class="text-[11px] text-gray-500 font-bold uppercase tracking-wider">Mail Relay</div><a href="mailto:contact@qmipl.com" class="text-xs font-semibold text-white hover:text-blue-400 transition-colors">contact@qmipl.com</a></div>
                 </div>
-                <div class="p-5 bg-gray-900/50 border border-gray-800 rounded-2xl flex items-center gap-4">
-                    <div class="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400"><i class="fa-solid fa-phone"></i></div>
-                    <div><div class="text-xs text-gray-500 font-bold">Direct Call Trunk</div><a href="tel:+919890250074" class="text-sm font-semibold text-white hover:underline">+91 9890250074</a></div>
+                <div class="p-5 bg-gray-900/40 border border-gray-800 rounded-2xl flex items-center gap-4 glass-panel">
+                    <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 shadow-inner"><i class="fa-solid fa-phone"></i></div>
+                    <div><div class="text-[11px] text-gray-500 font-bold uppercase tracking-wider">Direct Trunk</div><a href="tel:+919890250074" class="text-xs font-semibold text-white hover:text-indigo-400 transition-colors">+91 9890250074</a></div>
                 </div>
-                <div class="p-5 bg-gray-900/50 border border-gray-800 rounded-2xl flex items-center gap-4">
-                    <div class="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400"><i class="fa-solid fa-map-location-dot"></i></div>
-                    <div><div class="text-xs text-gray-500 font-bold">HQ Coordinates</div><span class="text-xs font-semibold text-white">Karad, Maharashtra</span></div>
+                <div class="p-5 bg-gray-900/40 border border-gray-800 rounded-2xl flex items-center gap-4 glass-panel">
+                    <div class="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shadow-inner"><i class="fa-solid fa-map-pin"></i></div>
+                    <div><div class="text-[11px] text-gray-500 font-bold uppercase tracking-wider">HQ Coordinates</div><span class="text-xs font-semibold text-gray-300">Karad, MH, India</span></div>
                 </div>
             </div>
 
-            <!-- Interactive Ingestion Frame -->
-            <div class="bg-gray-900/30 border border-gray-800 p-8 rounded-3xl backdrop-blur-md neon-glow-purple">
+            <!-- Main Ingestion Data Form Panel -->
+            <div class="bg-gray-900/20 border border-gray-850 p-8 md:p-10 rounded-3xl shadow-2xl neon-glow-secondary glass-panel">
                 <form action="#" method="POST" class="space-y-6">
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div>
-                            <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Corporate Identity / Name</label>
-                            <input type="text" required class="w-full h-12 bg-gray-950 border border-gray-800 focus:border-blue-500 rounded-xl px-4 text-sm text-white focus:outline-none transition-all">
+                            <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 font-mono">Corporate Identity / Name</label>
+                            <input type="text" required class="w-full h-12 bg-gray-950 border border-gray-850 focus:border-blue-500 rounded-xl px-4 text-sm text-white focus:outline-none transition-colors duration-200">
                         </div>
                         <div>
-                            <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Enterprise Contact Loop (Email)</label>
-                            <input type="email" required class="w-full h-12 bg-gray-950 border border-gray-800 focus:border-blue-500 rounded-xl px-4 text-sm text-white focus:outline-none transition-all">
+                            <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 font-mono">Secure Return Channel (Email)</label>
+                            <input type="email" required class="w-full h-12 bg-gray-950 border border-gray-850 focus:border-blue-500 rounded-xl px-4 text-sm text-white focus:outline-none transition-colors duration-200">
                         </div>
                     </div>
                     <div>
-                        <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Operational System Directives / Project Parameters</label>
-                        <textarea rows="4" required class="w-full bg-gray-950 border border-gray-800 focus:border-blue-500 rounded-xl p-4 text-sm text-white focus:outline-none transition-all resize-none" placeholder="Outline your functional operational roadmap criteria here..."></textarea>
+                        <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 font-mono">Project Scope / Parameters Summary</label>
+                        <textarea rows="4" required class="w-full bg-gray-950 border border-gray-850 focus:border-blue-500 rounded-xl p-4 text-sm text-white focus:outline-none transition-colors duration-200 resize-none font-sans" placeholder="Outline your desired operational digital transformations..."></textarea>
                     </div>
-                    <button type="submit" class="w-full h-14 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 hover:opacity-95 text-white font-bold text-sm tracking-wider uppercase rounded-xl transition-all shadow-lg active:scale-[0.99]">
+                    <button type="submit" class="w-full h-14 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 hover:opacity-95 text-white font-bold text-sm tracking-widest uppercase rounded-xl shadow-lg shadow-purple-500/10 active:scale-[0.99] transition-all duration-150 font-mono">
                         Transmit Data Payload
                     </button>
                 </form>
@@ -476,30 +568,31 @@
         </div>
     </section>
 
-    <!-- GLOBAL ENTERPRISE FOOTER SCHEMA -->
-    <footer class="border-t border-gray-900 bg-gray-950 py-12 text-xs text-gray-500">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-8">
-            <div class="flex flex-col items-center lg:items-start gap-2">
+    <!-- MASTER GLOBAL FOOTER ARRAYS SCHEMA -->
+    <footer class="border-t border-gray-900/80 bg-gray-950 py-14 text-xs text-gray-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-10">
+            <div class="flex flex-col items-center lg:items-start gap-2.5">
                 <div class="flex items-center gap-3">
-                    <div class="w-6 h-6 rounded bg-blue-600 flex items-center justify-center font-bold text-white text-xs">Q</div>
-                    <span class="text-sm font-bold text-white">Quantox Technologies Pvt. Ltd.</span>
+                    <div class="w-7 h-7 rounded bg-blue-600 flex items-center justify-center font-bold text-white text-xs shadow">Q</div>
+                    <span class="text-sm font-bold text-white tracking-wide heading-font">Quantox Technologies Pvt. Ltd.</span>
                 </div>
-                <p class="text-[11px] text-gray-600 text-center lg:text-left mt-1">NH 166E, Gajanan Housing Society, Opposite Shakti Tyres, Karad, Satara, Maharashtra — 415110.</p>
+                <p class="text-[11px] text-gray-600 text-center lg:text-left leading-relaxed max-w-xl">NH 166E, Gajanan Housing Society, Opposite Shakti Tyres, Karad, Satara, Maharashtra — 415110.</p>
             </div>
             
-            <div class="flex flex-col items-center lg:items-end gap-3 text-center lg:text-right">
-                <div class="flex gap-6 font-mono text-gray-400">
-                    <a href="mailto:contact.qmipl@gmail.com" class="hover:text-blue-400 transition-colors">contact.qmipl@gmail.com</a>
-                    <span>|</span>
-                    <a href="tel:+919403456940" class="hover:text-purple-400 transition-colors">+91 9403456940</a>
+            <div class="flex flex-col items-center lg:items-end gap-4 text-center lg:text-right font-mono">
+                <div class="flex flex-wrap justify-center gap-6 text-gray-400">
+                    <a href="mailto:contact.qmipl@gmail.com" class="hover:text-blue-400 transition-colors"><i class="fa-regular fa-envelope mr-1.5 text-xs"></i>contact.qmipl@gmail.com</a>
+                    <span class="text-gray-800">|</span>
+                    <a href="tel:+919403456940" class="hover:text-purple-400 transition-colors"><i class="fa-solid fa-phone mr-1.5 text-xs"></i>+91 9403456940</a>
                 </div>
-                <p>&copy; 2026 Quantox Technologies Pvt. Ltd. All corporate rights reserved.</p>
+                <p class="text-gray-600">&copy; 2026 Quantox Technologies Pvt. Ltd. All corporate rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- INTERACTION LOGIC ENGINES -->
+    <!-- INTERACTIVE EVENT LISTENER SCRIPTS -->
     <script>
+        // Responsive Drawer Toggle Configurations
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
 
@@ -507,6 +600,7 @@
             mobileMenu.classList.toggle('hidden');
         });
 
+        // Autoclose Drawer Nodes On Scroll Targets Triggering
         const mobileLinks = mobileMenu.querySelectorAll('a');
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
