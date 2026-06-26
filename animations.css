@@ -1,0 +1,385 @@
+/* ==========================================================
+   ANIMATIONS.CSS
+   NextGen Technologies
+========================================================== */
+
+/* -----------------------------
+   Fade In Up
+------------------------------ */
+@keyframes fadeInUp{
+    0%{
+        opacity:0;
+        transform:translateY(60px);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* -----------------------------
+   Fade In Left
+------------------------------ */
+@keyframes fadeInLeft{
+    from{
+        opacity:0;
+        transform:translateX(-70px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+/* -----------------------------
+   Fade In Right
+------------------------------ */
+@keyframes fadeInRight{
+    from{
+        opacity:0;
+        transform:translateX(70px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+/* -----------------------------
+   Zoom In
+------------------------------ */
+@keyframes zoomIn{
+    from{
+        opacity:0;
+        transform:scale(.8);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+/* -----------------------------
+   Floating Animation
+------------------------------ */
+@keyframes floating{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+/* -----------------------------
+   Pulse
+------------------------------ */
+@keyframes pulse{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.05);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+/* -----------------------------
+   Rotate
+------------------------------ */
+@keyframes rotate360{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+/* -----------------------------
+   Glow
+------------------------------ */
+@keyframes glow{
+    0%{
+        box-shadow:0 0 10px rgba(0,191,255,.2);
+    }
+
+    50%{
+        box-shadow:0 0 35px rgba(0,191,255,.6);
+    }
+
+    100%{
+        box-shadow:0 0 10px rgba(0,191,255,.2);
+    }
+}
+
+/* -----------------------------
+   Hero Text
+------------------------------ */
+
+.hero-content h1{
+    animation:fadeInLeft 1s ease;
+}
+
+.hero-content p{
+    animation:fadeInUp 1.3s ease;
+}
+
+.hero-buttons{
+    animation:fadeInUp 1.6s ease;
+}
+
+.hero-image{
+    animation:
+        fadeInRight 1.2s ease,
+        floating 5s ease-in-out infinite;
+}
+
+/* -----------------------------
+   Buttons
+------------------------------ */
+
+.primary-btn{
+    animation:glow 3s infinite;
+}
+
+.primary-btn:hover{
+    animation:pulse .6s;
+}
+
+/* -----------------------------
+   Cards
+------------------------------ */
+
+.service-card{
+    transition:
+        transform .35s,
+        box-shadow .35s;
+}
+
+.service-card:hover{
+    transform:
+        translateY(-12px)
+        scale(1.02);
+}
+
+/* -----------------------------
+   Portfolio
+------------------------------ */
+
+.project{
+    transition:.4s;
+}
+
+.project:hover{
+    transform:translateY(-8px);
+}
+
+/* -----------------------------
+   Statistics
+------------------------------ */
+
+.stat{
+    transition:.35s;
+}
+
+.stat:hover{
+
+    animation:pulse .8s;
+
+}
+
+/* -----------------------------
+   Footer Icons
+------------------------------ */
+
+.footer-content i{
+
+transition:.35s;
+
+}
+
+.footer-content i:hover{
+
+transform:translateY(-5px);
+
+color:#00bfff;
+
+}
+
+/* -----------------------------
+   Loader Animation
+------------------------------ */
+
+.loader.fade-out{
+
+opacity:0;
+
+visibility:hidden;
+
+}
+
+/* -----------------------------
+   Scroll Reveal Classes
+------------------------------ */
+
+.reveal{
+
+opacity:0;
+
+transform:translateY(60px);
+
+transition:1s;
+
+}
+
+.reveal.active{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/* Left */
+
+.reveal-left{
+
+opacity:0;
+
+transform:translateX(-80px);
+
+transition:1s;
+
+}
+
+.reveal-left.active{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+/* Right */
+
+.reveal-right{
+
+opacity:0;
+
+transform:translateX(80px);
+
+transition:1s;
+
+}
+
+.reveal-right.active{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+/* Zoom */
+
+.reveal-zoom{
+
+opacity:0;
+
+transform:scale(.85);
+
+transition:1s;
+
+}
+
+.reveal-zoom.active{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+/* -----------------------------
+   Navigation Hover
+------------------------------ */
+
+.nav-links a{
+
+transition:.35s;
+
+}
+
+.nav-links a:hover{
+
+letter-spacing:1px;
+
+}
+
+/* -----------------------------
+   Logo
+------------------------------ */
+
+.logo{
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+.logo:hover{
+
+transform:scale(1.05);
+
+}
+
+/* -----------------------------
+   Hero Image Glow
+------------------------------ */
+
+.hero-image img{
+
+filter:drop-shadow(0 25px 40px rgba(0,191,255,.25));
+
+}
+
+/* -----------------------------
+   Gradient Animation
+------------------------------ */
+
+@keyframes gradientMove{
+
+0%{
+
+background-position:0%;
+
+}
+
+50%{
+
+background-position:100%;
+
+}
+
+100%{
+
+background-position:0%;
+
+}
+
+}
+
+.cta{
+
+background-size:300% 300%;
+
+animation:gradientMove 8s linear infinite;
+
+}
